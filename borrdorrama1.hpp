@@ -1,10 +1,8 @@
-#include Proyectofunda.hpp
+#include "Proyectofunda.hpp"
 
 //prueba1
-#include <iostream>
-#include <string.h>
-#include <time.h>
-using namespace std;
+
+
 
 
 const int Maximo_de_jugadores = 10; 
