@@ -16,3 +16,11 @@ void agregarJugador();
 void ayuda();
 char opc;
 string palabras[]= {"pantalla","gato","carro","celular","camisa","fruta","teclado","computadora","collar","perro","elisa", "programador", "ingeniero", "catedratico", "calculadora", "codigo", "iostream", "uca", "dibujar", "ahorcado", "informatica"};
+string palabra , fallos; 
+int palaB, vidas;
+bool correcta, completa;
+
+
+int main(){
+   
+     cout<<"\t JUEGO DE EL AHORCADO"<<endl<<endl;
