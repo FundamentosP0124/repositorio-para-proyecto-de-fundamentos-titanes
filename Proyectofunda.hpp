@@ -95,7 +95,7 @@ void creadores() {
         cin >> nombres[Catidad_jugadores];
         Catidad_jugadores++;
         cout << "Jugador agregado exitosamente." << endl<<endl;
-    
+    //Se mostrara este mensaje si sobrepasa la cantidad de 10 jugadores
     } else {
         cout << "No se pueden agregar más jugadores. Máximo alcanzado." << endl;
     }
@@ -114,3 +114,4 @@ cout<<"Paso 5: Para ingresar la letra tienes que escogerla y luego precionar ent
 cout<<"Paso 6: El jugador que termine la ultima vida de el juego sera el perdedor."<<endl<<endl;
 
 
+}
