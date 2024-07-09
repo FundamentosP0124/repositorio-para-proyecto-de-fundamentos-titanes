@@ -61,4 +61,9 @@ void IniciarJuego() {
              cout << "Ingresa cualquier caracter para volver al menu: ";
              cin>>opc;
         }
+        turno_actual = (turno_actual + 1) % Catidad_jugadores;
+	}
+	    
+     }
+
         
