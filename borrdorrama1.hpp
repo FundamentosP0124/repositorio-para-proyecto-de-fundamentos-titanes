@@ -54,3 +54,15 @@ do
      break;  
 	 case '4':ayuda();
 	 break; 
+           case '6':cout<<"Usted a salido del juego ";
+     return 0;
+        default:
+
+     cout<<"\t :::ELIGA UNA OPCION VALIDA::: "<<endl;
+    }
+    
+  } while (opc != '6');
+  
+    return 0;
+    
+}
