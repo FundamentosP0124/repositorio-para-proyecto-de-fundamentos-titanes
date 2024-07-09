@@ -12,8 +12,8 @@ int turno_actual = 0;
 void IniciarJuego();//declara funcion de el juego ahorcado
 void Personaje();//delara la funcion del  avatar
 void creadores();//declara la funcion de creadores de el programa
-void agregarJugador();
-void ayuda();
+void agregarJugador();//declara la funcion para agregar a los jugadores
+void ayuda();//declara la funcion para ayudar a como manejar el juego en todas sus etapas.
 char opc;
 string palabras[]= {"pantalla","gato","carro","celular","camisa","fruta","teclado","computadora","collar","perro","elisa", "programador", "ingeniero", "catedratico", "calculadora", "codigo", "iostream", "uca", "dibujar", "ahorcado", "informatica"};
 string palabra , fallos; 
