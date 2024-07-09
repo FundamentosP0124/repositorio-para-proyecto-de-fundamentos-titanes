@@ -37,3 +37,18 @@ void IniciarJuego() {
 				completa = false;
                 break;
 			}
+             }
+		if(completa){
+
+			Personaje();
+
+			cout<<"Palabra: "<<palabras[palaB]<<endl;
+			cout<<"!EL GANADOR DE LA PARTIDA ES ! "<< nombres[turno_actual]<<"  FELICIDADES :)"<<endl; 
+			victorias[turno_actual]++;
+		
+	         cout << " Ingresa cualquier caracter para volver al menu: ";
+			cin>>opc;
+
+			break;
+		}
+        
