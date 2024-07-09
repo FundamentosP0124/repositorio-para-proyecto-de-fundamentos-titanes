@@ -41,4 +41,37 @@ void Personaje(){
 		cout<<"  ------\n";
 		break;
        
-    } 
+    case 2:
+		cout<<"  --------\n";
+		cout<<"  !      !\n";
+		cout<<"  !      0\n";
+		cout<<"  !     -|-\n";
+		cout<<"  !\n";
+		cout<<"  !\n";
+		cout<<"  !\n";
+		cout<<"  ------\n";
+		break;
+
+		case 1:
+		cout<<"  --------\n";
+		cout<<"  !      !\n";
+		cout<<"  !      0\n";
+		cout<<"  !     -|-\n";
+		cout<<"  !     /\n";
+		cout<<"  !\n";
+		cout<<"  !\n";
+		cout<<"  ------\n";
+		break;
+
+		case 0:
+		cout<<"  --------\n";
+		cout<<"  !      !\n";
+		cout<<"  !      0\n";
+		cout<<"  !     -|-\n";
+		cout<<"  !     / \\\n";
+		cout<<"  !\n";
+		cout<<"  !\n";
+		cout<<"  ------\n";
+		break;
+	}
+}
