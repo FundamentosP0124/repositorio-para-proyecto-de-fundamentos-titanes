@@ -36,3 +36,21 @@ do
      cout<<"Eliga la opcion deseada: "<<endl;
      cin>>opc;
     switch (opc)
+    {
+        
+    case '1' :
+    if (Catidad_jugadores > 0)
+    {
+     IniciarJuego();
+    }else
+    {
+      cout << ":::No hay jugadores. Por favor, agregue jugadores primero:::" << endl;
+    }
+    break;
+    case '2':creadores();
+        break;
+
+     case '3':agregarJugador();
+     break;  
+	 case '4':ayuda();
+	 break; 
