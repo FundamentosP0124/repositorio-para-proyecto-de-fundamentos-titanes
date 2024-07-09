@@ -51,4 +51,7 @@ void IniciarJuego() {
 
 			break;
 		}
+
+        if (vidas == 0) {
+        cout<<endl<<"\t--- A H O R C A D O ---\n"<<endl;
         
