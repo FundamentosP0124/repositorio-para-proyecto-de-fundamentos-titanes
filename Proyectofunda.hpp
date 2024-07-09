@@ -8,6 +8,8 @@ using namespace std;
 
 //Se declara la funcion del personaje
 void Personaje(){
+    //La variable a tomar en el switch sera "vidas"
+
 	switch(vidas){
 
 		case 6:
@@ -78,9 +80,10 @@ void Personaje(){
 	}
 }
 
+//Se mostraran a los que participaron en la creacion del codigo
 void creadores() {
 	cout<<endl;
-    cout << "\t::: Sibrian Israel Lemus  00200524 :::" << endl;
+    cout << "\t::: Sibrian Lemus Israel  00200524 :::" << endl;
     cout << "\t::: Hidalgo Henriquez Aaron Eduardo  00029624 :::" << endl;
     cout << "\t::: Ayala Rosales Daniel Steven  00225324 :::" << endl;
 	cout<<endl;
