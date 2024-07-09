@@ -59,4 +59,6 @@ void IniciarJuego() {
              cout<<"!PERDISTE! \n" << nombres[turno_actual] <<" SUERTE A LA PROXIMA :`("<<endl;
              derrotas[turno_actual]++;
              cout << "Ingresa cualquier caracter para volver al menu: ";
+             cin>>opc;
+        }
         
