@@ -30,3 +30,10 @@ void IniciarJuego() {
             fallos += opc;
             cout << "vidas: " << vidas;
         }
+
+        completa = true;
+		for(int i = 0; i < (int)palabra.size(); i++){
+			if(palabra[i] == '-'){
+				completa = false;
+                break;
+			}
