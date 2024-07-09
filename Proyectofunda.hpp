@@ -84,3 +84,16 @@ void creadores() {
 	cout<<endl;
     }
 
+    void agregarJugador() {
+    if (Catidad_jugadores < Maximo_de_jugadores) {
+        cout << "Ingrese el nombre del nuevo jugador: ";
+        cin >> nombres[Catidad_jugadores];
+        Catidad_jugadores++;
+        cout << "Jugador agregado exitosamente." << endl<<endl;
+    
+    } else {
+        cout << "No se pueden agregar más jugadores. Máximo alcanzado." << endl;
+    }
+}
+
+
