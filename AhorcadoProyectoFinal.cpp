@@ -1,8 +1,8 @@
+//Prueba dos de uso de ramas
 #include <iostream>
 #include <string.h>
 #include <time.h>
 using namespace std;
-
 
 const int Maximo_de_jugadores = 10; 
 int Catidad_jugadores = 0;
@@ -10,13 +10,13 @@ string nombres[Maximo_de_jugadores];
 int victorias[Maximo_de_jugadores] = {0};
 int derrotas[Maximo_de_jugadores] = {0};
 int turno_actual = 0;
-void IniciarJuego();
-void Personaje();
-void creadores();
-void agregarJugador();
-void ayuda();
+void IniciarJuego();//declara funcion de el juego ahorcado
+void Personaje();//delara la funcion del  avatar
+void creadores();//declara la funcion de creadores de el programa
+void agregarJugador();//declara la funcion para agregar a los jugadores
+void ayuda();//declara la funcion para ayudar a como manejar el juego en todas sus etapas.
 char opc;
-string palabras[] = {"pantalla","gato","carro","celular","camisa","fruta","teclado","computadora","collar","perro","elisa", "programador", "ingeniero", "catedratico", "calculadora", "codigo", "iostream", "uca", "dibujar", "ahorcado", "informatica"};
+string palabras[]= {"pantalla","gato","carro","celular","camisa","fruta","teclado","computadora","collar","perro","elisa", "programador", "ingeniero", "catedratico", "calculadora", "codigo", "iostream", "uca", "dibujar", "ahorcado", "informatica"};
 string palabra , fallos; 
 int palaB, vidas;
 bool correcta, completa;
@@ -25,9 +25,9 @@ bool correcta, completa;
 int main(){
    
      cout<<"\t JUEGO DE EL AHORCADO"<<endl<<endl;
-  do
+do
   {
-      
+      //estructura de el menu mostrado a usuario
      cout<<" \tMenu principal."<<endl<<endl;
      cout<<"1.Jugar partida. "<<endl<<endl;
      cout<<"2.Creditos. "<<endl<<endl;
@@ -40,9 +40,9 @@ int main(){
     {
         
     case '1' :
-    if (Catidad_jugadores > 0)
+    if (Catidad_jugadores > 0)//si la cantidad de jugadores es mayor que 0 se ejecutara el juego
     {
-     IniciarJuego();
+     IniciarJuego();//funcion para ejecutar el juego
     }else
     {
       cout << ":::No hay jugadores. Por favor, agregue jugadores primero:::" << endl;
@@ -51,12 +51,11 @@ int main(){
     case '2':creadores();
         break;
 
-     case '3':agregarJugador();
+     case '3':agregarJugador();//funcion llama a para agregar jugadores
      break;  
 	 case '4':ayuda();
 	 break; 
-
-        case '6':cout<<"Usted a salido del juego ";
+           case '6':cout<<"Usted a salido del juego ";
      return 0;
         default:
 
@@ -68,46 +67,46 @@ int main(){
     return 0;
     
 }
-void IniciarJuego(){
-	srand((int)time(__null));
-	palaB = rand()%20;
-     vidas= 6;
-	palabra = "";
-	fallos = "";
-	
-	for(int i = 0; i < (int)palabras[palaB].size(); i++){
-		palabra += "-";
-	}
-	
-	while(vidas > 0){
-		Personaje();
+
+void IniciarJuego() {
+    srand((int)time(NULL));
+    palaB = rand() % 20;
+    vidas = 6;
+    palabra = "";
+    fallos = "";
+    
+    for(int i = 0; i < (int)palabras[palaB].size(); i++) {
+        palabra += "-";
+    }
+    while(vidas > 0) {
+        Personaje();
         cout << "Turno de: " << nombres[turno_actual] << endl;
-		cout << "vidas: "<< vidas<< "\n";
-		cout<<"Letras fallidas: "<<fallos<<endl;
-		cout<<"Progreso: "<<palabra<<"\n";
-		cout<<"Ingrese una letra(minuscula): ";
-		cin>>opc;
-		
-		correcta = false;
-		for(int i = 0; i < (int)palabras[palaB].size(); i++){
-			if(palabras[palaB][i] == opc){
-				palabra[i] = opc;
-				correcta = true;	
-			}
-		}
-		if(!correcta){
-			vidas--;
-			fallos += opc;
-			cout << "vidas: "<< vidas;
-		}
-		
-		completa = true;
+        cout << "vidas: " << vidas << "\n";
+        cout << "Letras fallidas: " << fallos << endl;
+        cout << "Progreso: " << palabra << "\n";
+        cout << "Ingrese una letra(minuscula): ";
+        cin >> opc;
+        
+        correcta = false;
+        for(int i = 0; i < (int)palabras[palaB].size(); i++) {
+            if(palabras[palaB][i] == opc) {
+                palabra[i] = opc;
+                correcta = true;    
+            }
+        }
+        if(!correcta) {
+            vidas--;
+            fallos += opc;
+            cout << "vidas: " << vidas;
+        }
+
+        completa = true;
 		for(int i = 0; i < (int)palabra.size(); i++){
 			if(palabra[i] == '-'){
 				completa = false;
                 break;
 			}
-		}
+             }
 		if(completa){
 
 			Personaje();
@@ -121,23 +120,26 @@ void IniciarJuego(){
 
 			break;
 		}
-	if (vidas == 0) {
-        cout<<endl<<"\t--- A H O R C A D O ---\n"<<endl;
-	         Personaje();
-	         cout<<"Palabra: "<<palabras[palaB]<<endl;
-	         cout<<"!PERDISTE! \n" << nombres[turno_actual] <<" SUERTE A LA PROXIMA :`("<<endl;
-             derrotas[turno_actual]++;
-             
-	         cout << "Ingresa cualquier caracter para volver al menu: ";
-	         cin>>opc;
-        }
 
+        if (vidas == 0) {
+        cout<<endl<<"\t--- A H O R C A D O ---\n"<<endl;
+        Personaje();
+	         cout<<"Palabra: "<<palabras[palaB]<<endl;
+             cout<<"!PERDISTE! \n" << nombres[turno_actual] <<" SUERTE A LA PROXIMA :`("<<endl;
+             derrotas[turno_actual]++;
+             cout << "Ingresa cualquier caracter para volver al menu: ";
+             cin>>opc;
+        }
         turno_actual = (turno_actual + 1) % Catidad_jugadores;
 	}
 	    
      }
-
+// agrego las funciones para la vida del jugador, la funcion para saber quien es el ganador y el perdedor.
+        
+//Se declara la funcion del personaje
 void Personaje(){
+    //La variable a tomar en el switch sera "vidas"
+
 	switch(vidas){
 
 		case 6:
@@ -172,19 +174,8 @@ void Personaje(){
 		cout<<"  !\n";
 		cout<<"  ------\n";
 		break;
-
-		case 3:
-		cout<<"  --------\n";
-		cout<<"  !      !\n";
-		cout<<"  !      0\n";
-		cout<<"  !     -|\n";
-		cout<<"  !\n";
-		cout<<"  !\n";
-		cout<<"  !\n";
-		cout<<"  ------\n";
-		break;
-
-		case 2:
+       
+    case 2:
 		cout<<"  --------\n";
 		cout<<"  !      !\n";
 		cout<<"  !      0\n";
@@ -219,26 +210,27 @@ void Personaje(){
 	}
 }
 
+//Se mostraran a los que participaron en la creacion del codigo
 void creadores() {
 	cout<<endl;
-    cout << "\t::: Sibrian Israel Lemus  00200524 :::" << endl;
+    cout << "\t::: Sibrian Lemus Israel  00200524 :::" << endl;
     cout << "\t::: Hidalgo Henriquez Aaron Eduardo  00029624 :::" << endl;
     cout << "\t::: Ayala Rosales Daniel Steven  00225324 :::" << endl;
 	cout<<endl;
     }
-
-void agregarJugador() {
+//Esta es la funcion en la que se puede agregar la cantidad de jugadores en la partida
+    void agregarJugador() {
     if (Catidad_jugadores < Maximo_de_jugadores) {
-        cout << "Ingrese el nombre del nuevo jugador: ";
-        cin >> nombres[Catidad_jugadores];
-        Catidad_jugadores++;
-        cout << "Jugador agregado exitosamente." << endl<<endl;
-    
+    cout << "Ingrese el nombre del nuevo jugador: ";
+    cin >> nombres[Catidad_jugadores];
+    Catidad_jugadores++;
+    cout << "Jugador agregado exitosamente." << endl<<endl;
+    //Se mostrara este mensaje si sobrepasa la cantidad de 10 jugadores
     } else {
-        cout << "No se pueden agregar más jugadores. Máximo alcanzado." << endl;
+    cout << "No se pueden agregar más jugadores. Máximo alcanzado." << endl;
     }
 }
-
+//Esta funcion sirve para que los jugadores sepan como usar el juego dandole las indicaciones necesarias
 void ayuda(){
 
 cout<<"-------------------------------------------------------------------------------------------------------------------------------------------------------------------"<<endl;
@@ -261,17 +253,5 @@ cout<<"-------------------------------------------------------------------------
 cout<<"Cualquier otro opcion no indicada sera invalida para el juego."<<endl<<endl;
 cout<<"-------------------------------------------------------------------------------------------------------------------------------------------------------------------"<<endl;
 
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
