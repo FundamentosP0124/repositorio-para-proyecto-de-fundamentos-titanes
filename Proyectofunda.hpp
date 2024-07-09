@@ -91,17 +91,16 @@ void creadores() {
 //Esta es la funcion en la que se puede agregar la cantidad de jugadores en la partida
     void agregarJugador() {
     if (Catidad_jugadores < Maximo_de_jugadores) {
-        cout << "Ingrese el nombre del nuevo jugador: ";
-        cin >> nombres[Catidad_jugadores];
-        Catidad_jugadores++;
-        cout << "Jugador agregado exitosamente." << endl<<endl;
+    cout << "Ingrese el nombre del nuevo jugador: ";
+    cin >> nombres[Catidad_jugadores];
+    Catidad_jugadores++;
+    cout << "Jugador agregado exitosamente." << endl<<endl;
     //Se mostrara este mensaje si sobrepasa la cantidad de 10 jugadores
     } else {
-        cout << "No se pueden agregar más jugadores. Máximo alcanzado." << endl;
+    cout << "No se pueden agregar más jugadores. Máximo alcanzado." << endl;
     }
 }
-
-
+//Esta funcion sirve para que los jugadores sepan como usar el juego dandole las indicaciones necesarias
 void ayuda(){
 
 cout<<"-------------------------------------------------------------------------------------------------------------------------------------------------------------------"<<endl;
