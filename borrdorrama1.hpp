@@ -26,7 +26,7 @@ int main(){
      cout<<"\t JUEGO DE EL AHORCADO"<<endl<<endl;
 do
   {
-      
+      //estructura de el menu mostrado a usuario
      cout<<" \tMenu principal."<<endl<<endl;
      cout<<"1.Jugar partida. "<<endl<<endl;
      cout<<"2.Creditos. "<<endl<<endl;
@@ -39,9 +39,9 @@ do
     {
         
     case '1' :
-    if (Catidad_jugadores > 0)
+    if (Catidad_jugadores > 0)//si la cantidad de jugadores es mayor que 0 se ejecutara el juego
     {
-     IniciarJuego();
+     IniciarJuego();//funcion para ejecutar el juego
     }else
     {
       cout << ":::No hay jugadores. Por favor, agregue jugadores primero:::" << endl;
@@ -50,7 +50,7 @@ do
     case '2':creadores();
         break;
 
-     case '3':agregarJugador();
+     case '3':agregarJugador();//funcion llama a para agregar jugadores
      break;  
 	 case '4':ayuda();
 	 break; 
