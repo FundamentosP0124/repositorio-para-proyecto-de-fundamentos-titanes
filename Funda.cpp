@@ -57,4 +57,5 @@ void IniciarJuego() {
         Personaje();
 	         cout<<"Palabra: "<<palabras[palaB]<<endl;
              cout<<"!PERDISTE! \n" << nombres[turno_actual] <<" SUERTE A LA PROXIMA :`("<<endl;
+             derrotas[turno_actual]++;
         
