@@ -65,5 +65,5 @@ void IniciarJuego() {
 	}
 	    
      }
-
+// agrego las funciones para la vida del jugador, la funcion para saber quien es el ganador y el perdedor.
         
