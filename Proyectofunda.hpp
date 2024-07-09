@@ -1,10 +1,12 @@
+//Declarar las bibliotecas que usaremos
 #include <iostream>
 #include <string.h>
 #include <time.h>
 
+//Declarar atajo para la entrada y salida de datos
 using namespace std;
 
-
+//Se declara la funcion del personaje
 void Personaje(){
 	switch(vidas){
 
@@ -107,18 +109,5 @@ cout<<"Paso 3: Escoga la opcion 1 para empezar a jugar."<<endl;
 cout<<"Paso 4: Cada jugador tendra la oportunidad de acertar la palabra en juego."<<endl;
 cout<<"Paso 5: Para ingresar la letra tienes que escogerla y luego precionar enter, si aciertas se mostrara en pantalla de lo contrario se les restara una vida a todos los jugadores. "<<endl;
 cout<<"Paso 6: El jugador que termine la ultima vida de el juego sera el perdedor."<<endl<<endl;
-cout<<"-------------------------------------------------------------------------------------------------------------------------------------------------------------------"<<endl;
-cout<<"\tComo ver los creadores de el juego. "<<endl;
-cout<<"Escoga la opcion 2  con tu teclado para ingresar a los creditos."<<endl<<endl;
-cout<<"-------------------------------------------------------------------------------------------------------------------------------------------------------------------"<<endl;
-
-cout<<"\tComo salir de el juego."<<endl;
-cout<<"Escoga la opcion 6  con tu teclado para salir de el juego de ahorcado."<<endl<<endl;
-cout<<"-------------------------------------------------------------------------------------------------------------------------------------------------------------------"<<endl;
-
-cout<<"Cualquier otro opcion no indicada sera invalida para el juego."<<endl<<endl;
-cout<<"-------------------------------------------------------------------------------------------------------------------------------------------------------------------"<<endl;
-
-}
 
 
