@@ -88,7 +88,7 @@ void creadores() {
     cout << "\t::: Ayala Rosales Daniel Steven  00225324 :::" << endl;
 	cout<<endl;
     }
-
+//Esta es la funcion en la que se puede agregar la cantidad de jugadores en la partida
     void agregarJugador() {
     if (Catidad_jugadores < Maximo_de_jugadores) {
         cout << "Ingrese el nombre del nuevo jugador: ";
