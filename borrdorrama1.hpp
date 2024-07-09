@@ -9,9 +9,9 @@ string nombres[Maximo_de_jugadores];
 int victorias[Maximo_de_jugadores] = {0};
 int derrotas[Maximo_de_jugadores] = {0};
 int turno_actual = 0;
-void IniciarJuego();
-void Personaje();
-void creadores();
+void IniciarJuego();//declara funcion de el juego ahorcado
+void Personaje();//delara la funcion del  avatar
+void creadores();//declara la funcion de creadores de el programa
 void agregarJugador();
 void ayuda();
 char opc;
