@@ -97,3 +97,15 @@ void creadores() {
 }
 
 
+void ayuda(){
+
+cout<<"-------------------------------------------------------------------------------------------------------------------------------------------------------------------"<<endl;
+cout<<"\tComo jugar ahorcado. "<<endl;
+cout<<"Paso 1: Escoga la opcion 3  con tu teclado para ingresar a los jugadores. NOTA 'Debes de ingresar por lo menos a un jugador para iniciar el juego'"<<endl;
+cout<<"Paso 2: Ingresar el nombre o caracter de tu eleccion."<<endl;
+cout<<"Paso 3: Escoga la opcion 1 para empezar a jugar."<<endl;
+cout<<"Paso 4: Cada jugador tendra la oportunidad de acertar la palabra en juego."<<endl;
+cout<<"Paso 5: Para ingresar la letra tienes que escogerla y luego precionar enter, si aciertas se mostrara en pantalla de lo contrario se les restara una vida a todos los jugadores. "<<endl;
+cout<<"Paso 6: El jugador que termine la ultima vida de el juego sera el perdedor."<<endl<<endl;
+
+
