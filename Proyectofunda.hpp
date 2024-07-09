@@ -75,3 +75,12 @@ void Personaje(){
 		break;
 	}
 }
+
+void creadores() {
+	cout<<endl;
+    cout << "\t::: Sibrian Israel Lemus  00200524 :::" << endl;
+    cout << "\t::: Hidalgo Henriquez Aaron Eduardo  00029624 :::" << endl;
+    cout << "\t::: Ayala Rosales Daniel Steven  00225324 :::" << endl;
+	cout<<endl;
+    }
+
